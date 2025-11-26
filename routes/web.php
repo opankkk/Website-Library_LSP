@@ -41,6 +41,11 @@ Route::prefix('admin')->name('admin.')->middleware('auth:admin')->group(function
     // Aksi: Hapus Buku dari Pesanan (Jika stok kosong)
     Route::delete('/peminjaman/{kode}/buku/{id_buku}', [AdminController::class, 'removeBook'])->name('peminjaman.remove_book');
 
+    Route::get('/users', [AdminController::class, 'userIndex'])->name('users.index');
+
+    // 2. Aksi Ubah Status (Aktif/Nonaktif)
+    Route::patch('/users/{id}/status', [AdminController::class, 'userUpdateStatus'])->name('users.status');
+
 });
 Route::middleware('auth:web')->group(function () {
     // Resource ini otomatis membuat route bernama 'peminjaman.index'

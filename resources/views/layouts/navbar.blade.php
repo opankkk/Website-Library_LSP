@@ -33,6 +33,12 @@
                                     Daftar Peminjaman
                                 </a>
                             </li>
+                            <li>
+                                <a class="{{ request()->routeIs('admin.users.*') ? 'text-lime-400 font-bold' : 'text-white font-medium' }} hover:text-lime-400 transition"
+                                   href="{{ route('admin.users.index') }}">
+                                    Daftar Member
+                                </a>
+                            </li>
 
                         @elseif(Auth::guard('web')->check())
                             {{-- === MENU KHUSUS MEMBER === --}}

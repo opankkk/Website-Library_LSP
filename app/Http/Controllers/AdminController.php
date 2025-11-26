@@ -113,4 +113,23 @@ class AdminController extends Controller
 
         return back()->with('success', 'Buku berhasil dihapus dari pesanan ini.');
     }
+    public function userIndex()
+    {
+        // Ambil semua data peminjam, urutkan terbaru
+        $users = \App\Models\Peminjam::latest()->paginate(10);
+        return view('admin.daftar_user', compact('users'));
+    }
+
+    public function userUpdateStatus($id)
+    {
+        $user = \App\Models\Peminjam::findOrFail($id);
+
+        // Logic Toggle: Jika 1 jadi 0, Jika 0 jadi 1
+        $user->status_peminjam = !$user->status_peminjam;
+        $user->save();
+
+        $statusText = $user->status_peminjam ? 'DIAKTIFKAN' : 'DINONAKTIFKAN';
+
+        return back()->with('success', "User atas nama {$user->nama_peminjam} berhasil {$statusText}.");
+    }
 }
