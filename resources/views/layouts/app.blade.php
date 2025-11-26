@@ -41,7 +41,7 @@
                 <div class="border-b border-teal-700 pb-4 mb-4">
                     <p class="text-lime-400 text-sm">Halo, {{ Auth::user()->nama_peminjam }}</p>
                 </div>
-                <a href="{{ route('items.index') }}" class="text-xl font-medium hover:text-lime-400">Koleksi Buku</a>
+                {{-- <a href="{{ route('items.index') }}" class="text-xl font-medium hover:text-lime-400">Koleksi Buku</a> --}}
                 <a href="#" class="text-xl font-medium hover:text-lime-400">Riwayat Peminjaman</a>
 
                 {{-- Logout Mobile --}}

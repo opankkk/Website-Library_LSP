@@ -12,10 +12,10 @@ Route::post('/register', [AuthController::class, 'register'])->name('register.po
 Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 
 
-Route::middleware('auth:web')->group(function () {
+// Route::middleware('auth:web')->group(function () {
 
-    Route::resource('items', ItemController::class);
-});
+//     Route::resource('items', ItemController::class);
+// });
 
 
 Route::prefix('admin')->name('admin.')->middleware('auth:admin')->group(function() {
