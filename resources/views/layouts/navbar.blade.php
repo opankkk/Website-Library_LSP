@@ -10,7 +10,7 @@
                     {{-- Logika Link Logo: Kalau Admin ke Dashboard, Kalau Member/Tamu ke Login/Home --}}
                     <a href="{{ Auth::guard('admin')->check() ? route('admin.peminjaman.index') : route('login') }}" class="flex items-center gap-2">
                         <span class="text-white font-bold text-lg tracking-widest hover:text-lime-400 transition">
-                            LIOBRARY
+                            ArcadiaLibrary
                         </span>
                     </a>
                 </div>

@@ -13,13 +13,11 @@
             <div class="absolute top-0 left-0 w-full h-full opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
 
             <div class="relative z-10 mt-10">
-                <div class="text-lime-400 font-bold text-xl tracking-wider mb-2">LIOBRARY</div>
+                <div class="text-lime-400 font-bold text-xl tracking-wider mb-2">ARCADIA LIBRARY</div>
                 <h1 class="text-white text-5xl font-bold leading-tight">
-                    Book Service
-                </h1>
+                Administrator <br> Book Service </h1>
                 <p class="text-teal-200 mt-4 text-lg max-w-md">
-                    Satu akun untuk semua akses. Pinjam buku atau kelola perpustakaan dari sini.
-                </p>
+                    Kelola data peminjaman, persetujuan buku, dan manajemen pustaka dalam satu pintu.                </p>
 
                 <div class="mt-8 flex gap-4">
                     <div class="bg-teal-800 p-4 rounded-lg">
@@ -34,7 +32,7 @@
             </div>
 
             <div class="relative z-10 text-teal-200 text-sm">
-                &copy; 2025 Perpustakaan Liobrary. Sertifikasi Junior Web Programmer.
+                &copy; 2025 Arcadia Admin System. Restricted Access.
             </div>
         </div>
 
